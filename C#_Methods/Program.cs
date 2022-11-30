@@ -16,7 +16,7 @@ Method2("Текст сообщения");*/
 
 // 2.1. Когда используются именованные сообщения
 
-void Method21(string msg, int count) // сообщение и счетчик, сколько раз показ текст
+/*void Method21(string msg, int count) // сообщение и счетчик, сколько раз показ текст
 {
     int i = 0; //вводим переменную
     while (i < count)
@@ -25,4 +25,15 @@ void Method21(string msg, int count) // сообщение и счетчик, с
         i++;
     }
 }
-Method21("Текст", 4);
+Method21("Текст", 4); или
+Method21(msg:"Текст", count: 4); или
+Method21(count: 4, msg:"Новый Текст"); при вызове такого метода не обязательно вводить аргументы по порядку  */
+
+// Метод ничего не принимает,но что-то возвращает
+
+int Method3()
+{
+    return DateTime.Now.Year;
+}
+int date = Method3();
+Console.WriteLine(date);
