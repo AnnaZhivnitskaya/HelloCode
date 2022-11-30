@@ -40,7 +40,7 @@ Console.WriteLine(date);*/
 
 //4. Метод что-то принимает и что-то возвращает
 
-string Method4(int count, string text) //может отдавать и принимать любой тип данных//
+/*string Method4(int count, string text) //может отдавать и принимать любой тип данных//
 {
     int i = 0;
     string result = string.Empty; // string result = ""; присваиваем переменной resurlt 
@@ -53,5 +53,20 @@ string Method4(int count, string text) //может отдавать и прин
     return result;
 }
 string res = Method4(3, "asd");
+
+Console.WriteLine(res);*/
+
+string ForCycle(int count, string text) 
+{
+    string result = string.Empty;
+
+    for(int i = 0; i < 10; i++)
+        {
+            result = result + text;
+        }
+    
+    return result;
+}
+string res = ForCycle(3, "asd");
 
 Console.WriteLine(res);
