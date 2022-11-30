@@ -31,9 +31,27 @@ Method21(count: 4, msg:"Новый Текст"); при вызове таког�
 
 // Метод ничего не принимает,но что-то возвращает
 
-int Method3()
+/*int Method3()
 {
     return DateTime.Now.Year;
 }
 int date = Method3();
-Console.WriteLine(date);
+Console.WriteLine(date);*/
+
+//4. Метод что-то принимает и что-то возвращает
+
+string Method4(int count, string text) //может отдавать и принимать любой тип данных//
+{
+    int i = 0;
+    string result = string.Empty; // string result = ""; присваиваем переменной resurlt 
+                                    // пустая строка
+    while(i < count)
+    {
+        result = result + text;
+        i++;
+    }
+    return result;
+}
+string res = Method4(3, "asd");
+
+Console.WriteLine(res);
