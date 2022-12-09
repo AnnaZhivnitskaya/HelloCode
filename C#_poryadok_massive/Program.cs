@@ -44,6 +44,3 @@ PrintArray(array);
 SelectionSort(array);
 
 PrintArray(array);
-
-
-
